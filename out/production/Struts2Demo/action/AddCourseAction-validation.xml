@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC "-//Apache Struts//XWork Validator 1.0.2//EN"
+        "http://struts.apache.org/dtds/xwork-validator-1.0.2.dtd">
+<validators>
+    <!--验证课程名称-->
+    <field name="course.courseName">
+        <field-validator type="required">
+            <message>课程名称是必需的！</message>
+        </field-validator>
+    </field>
+    <!--验证课程学分-->
+    <field name="course.credit">
+        <field-validator type="required">
+            <message>课程学分是必需的！</message>
+        </field-validator>
+    </field>
+    <!--验证授课老师-->
+    <field name="course.teacher">
+        <field-validator type="required">
+            <message>授课老师是必需的！</message>
+        </field-validator>
+    </field>
+</validators>

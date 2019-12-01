@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC "-//Apache Struts//XWork Validator 1.0.2//EN"
+        "http://struts.apache.org/dtds/xwork-validator-1.0.2.dtd">
+<validators>
+    <!--验证是否输入学号-->
+    <field name="student.studentId">
+        <field-validator type="required">
+            <message>学号是必需的！</message>
+        </field-validator>
+    </field>
+    <!--对姓名进行验证-->
+    <field name="student.name">
+        <field-validator type="requiredstring">
+            <message>姓名是必需的！</message>
+        </field-validator>
+    </field>
+    <!--对性别进行验证-->
+    <field name="student.sex">
+        <field-validator type="requiredstring">
+            <message>性别必需选择！</message>
+        </field-validator>
+    </field>
+    <!--对专业进行验证-->
+    <field name="student.major">
+        <field-validator type="requiredstring">
+            <message>专业必需填写！</message>
+        </field-validator>
+    </field>
+    <!--对出生日期进行验证-->
+    <field name="student.birthDate">
+        <field-validator type="requiredstring">
+            <message>出生日期必需填写！</message>
+        </field-validator>
+    </field>
+    <!--对备注进行验证-->
+    <field name="student.memo">
+        <field-validator type="requiredstring">
+            <message>备注必需填写！</message>
+        </field-validator>
+    </field>
+</validators>
+        <!--<?xml version="1.0" encoding="UTF-8" ?>-->
+        <!--<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0 //EN"-->
+        <!--"http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd">-->
